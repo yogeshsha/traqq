@@ -1,0 +1,38 @@
+name: traqq
+description: "E-Commerce App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  either_dart: ^1.0.0
+  pull_to_refresh: ^2.0.0
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.6
+  animated_flip_counter: ^0.3.4
+  shared_preferences: ^2.3.2
+  provider: ^6.1.2
+  tap_effect: ^0.0.3
+  splashify: ^0.0.3
+  sqflite: ^2.3.3+2
+  path: ^1.9.0
+  flutter_staggered_animations: ^1.1.1
+  cached_network_image: ^3.4.1
+  fluttertoast: ^8.2.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
