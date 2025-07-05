@@ -26,7 +26,6 @@ class _DarkSwitchState extends State<DarkSwitch> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       themeChange = Provider.of<DarkThemeProvider>(context, listen: false);
       darkMode = themeChange.darkTheme;
-      AppHelper.myPrint("----------- Dark Mode -------------$darkMode");
       setState(() {});
     });
   }

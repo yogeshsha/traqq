@@ -1,5 +1,5 @@
+import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
 import 'package:traqq/utils/helper.dart';
 
 class ProductDatabase {
@@ -18,9 +18,11 @@ class ProductDatabase {
   }
 
   Future<Database> _initDB() async {
-    String path = join(await getDatabasesPath(), 'product_database.db');
+    final directory = await getApplicationDocumentsDirectory();
+    final dbPath = '${directory.path}/product_database.db';
+
     return await openDatabase(
-      path,
+      dbPath,
       version: 1,
       onCreate: _onCreate,
     );

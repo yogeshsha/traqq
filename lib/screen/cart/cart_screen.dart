@@ -53,7 +53,7 @@ class _CartScreenState extends State<CartScreen> {
                 onPressed: () async {
                   double price = await ProductDatabase().getTotalPrice();
                   if (context.mounted) {
-                    ToastMessage.showErrorMessage(context, "Total ${price.toStringAsFixed(22)}");
+                    ToastMessage.showErrorMessage(context, "Total ${price.toStringAsFixed(2)}");
                   }
                 },
                 icon:  Icon(Icons.monetization_on_outlined,color: Theme.of(context).colorScheme.primary)),
